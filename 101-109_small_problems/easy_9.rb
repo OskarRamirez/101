@@ -113,6 +113,7 @@ def buy_fruit(array)
   end.flatten
 end
 
+#101 problem 
 arr.select do |hash|
   hash.each_value.all? do |array|
     array.all? do |num|
@@ -121,14 +122,4 @@ arr.select do |hash|
     end
   end
 
-   s_array.select do |large_array|
-     large_array.all? do |sub_array|
-       sub_array.map { |num| num.even? }
-     end
-   end
-array = []
-   s_array.map do |large_array|
-     array << large_array if large_array.select do |sub_array|
-       sub_array.all? { |num| num.even? }
-     end
-   end
+  
